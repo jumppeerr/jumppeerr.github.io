@@ -84,6 +84,21 @@ bundle exec jekyll serve
 2. 在域名服务商添加 CNAME 记录，指向 `jumppeerr.github.io`。
 3. 在仓库 Settings → Pages 里勾选 Enforce HTTPS。
 
+## 常见问题
+
+**文章写了但线上没有？**
+检查 front matter 里的 `date`。Jekyll 默认不发布「未来时间」的文章，本项目已在 `_config.yml` 里设置 `future: true`，但如果你手动改过配置，记得保留它。
+
+**Windows 下 `git push` 报 `schannel: AcquireCredentialsHandle failed: SEC_E_NO_CREDENTIALS`？**
+这是 Windows 内置 TLS 后端在受限环境/代理下取不到凭证导致的，改用 OpenSSL 后端即可：
+
+```bash
+git config http.sslBackend openssl
+```
+
+**想换主题皮肤？**
+改 `_config.yml` 里的 `minima.skin`：`classic`、`dark`、`solarized`、`solarized-dark`。
+
 ## 许可
 
 文章内容版权归作者所有，站点模板代码可自由使用。
