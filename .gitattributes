@@ -1,0 +1,6 @@
+# 统一使用 LF，避免在 Windows 上提交 CRLF 造成噪音
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary

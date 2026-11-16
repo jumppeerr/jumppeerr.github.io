@@ -1,0 +1,57 @@
+# ============================================
+#  站点配置：日常只需要改这个文件
+# ============================================
+
+# 博客标题（显示在左上角）
+title: Jumppeerr 的博客
+
+# 副标题 / 站点描述（用于 SEO 和页脚）
+description: >-
+  记录工程实践、学习笔记与一点生活。
+
+# 作者名（显示在文章底部与页脚）
+author: jumppeerr
+
+# 站点地址：用户名站点固定为 https://<用户名>.github.io
+url: "https://jumppeerr.github.io"
+# 用户站点保持为空；如果是项目站点（如 /blog）则填 "/blog"
+baseurl: ""
+
+# ---------- 主题 ----------
+theme: minima
+minima:
+  # 可选皮肤：classic / dark / solarized / solarized-dark
+  skin: classic
+  date_format: "%Y-%m-%d"
+
+# 顶部导航（除首页外的页面）
+header_pages:
+  - about.md
+
+# ---------- 插件 ----------
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# ---------- 构建 ----------
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# 文章永久链接：/2026/11/16/hello-world/
+permalink: /:year/:month/:day/:title/
+timezone: Asia/Shanghai
+
+# 分页（Jekyll 原生不分页，首页按时间倒序列出全部文章）
+show_excerpts: true
+
+# 不参与构建的文件
+exclude:
+  - README.md
+  - .github
+  - .gitignore
