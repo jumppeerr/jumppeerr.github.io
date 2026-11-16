@@ -12,6 +12,12 @@ description: >-
 # 作者名（显示在文章底部与页脚）
 author: jumppeerr
 
+# 页面语言（影响 <html lang> 与 SEO）
+lang: zh-CN
+
+# 允许发布「未来日期」的文章：刚写完当天晚些时候的文章也能立刻上线
+future: true
+
 # 站点地址：用户名站点固定为 https://<用户名>.github.io
 url: "https://jumppeerr.github.io"
 # 用户站点保持为空；如果是项目站点（如 /blog）则填 "/blog"

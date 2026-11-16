@@ -17,7 +17,7 @@
 │   ├── 2026-11-12-markdown-cheatsheet.md
 │   └── 2026-11-16-hello-world.md
 ├── _includes/
-│   └── custom-head.html     # 往 <head> 里追加内容（引入自定义样式）
+│   └── head.html            # 覆盖主题的 <head>：引入自定义样式、SEO、RSS
 ├── assets/css/custom.css    # 自定义样式，叠加在 Minima 之上
 └── .github/workflows/pages.yml  # 构建 + 部署工作流
 ```
